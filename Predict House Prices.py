@@ -12,5 +12,5 @@ model.fit(X, y)
 new_house = [[1800]]
 predicted_price = model.predict(new_house)
 
-print(f"Estimated Price: ${predicted_price[0]:,.2f}")
+print(f"Estimated Price is: ${predicted_price[0]:,.2f}")
 # Output: Estimated Price: $360,000.00
