@@ -1,20 +1,20 @@
-# # # # # Integer
-# # # # x = 42
-# # # # print(type(x))        # <class 'int'>
+# # Integer
+# x = 42
+# print(type(x))        # <class 'int'>
 
-# # # # # Float
-# # # # y = 3.14
-# # # # print(type(y))        # <class 'float'>
+# # Float
+# y = 3.14
+# print(type(y))        # <class 'float'>
 
-# # # # # String
-# # # # name = "Alice"
-# # # # print(type(name))     # <class 'str'>
+# # String
+# name = "Alice"
+# print(type(name))     # <class 'str'>
 
-# # # # # More examples directly on expressions
-# # # # print(type(10))       # <class 'int'>
-# # # # print(type(2.5))      # <class 'float'>
-# # # # print(type("hello"))  # <class 'str'>
-# # # # print(type(True))     # <class 'bool'>
+# # More examples directly on expressions
+# print(type(10))       # <class 'int'>
+# print(type(2.5))      # <class 'float'>
+# print(type("hello"))  # <class 'str'>
+# print(type(True))     # <class 'bool'>
 
 
 # # # # x = 2
@@ -87,5 +87,35 @@
 # del(release_year_dict["Thriller"])
 # print(release_year_dict)
 
-A = {"AC/DC", "Thriller", "Back in Black"}
-print(A)
+# A = {"AC/DC", "Thriller", "Back in Black"}
+# print(A)
+# A.add("NSYNC")
+# print(A)
+
+# A.remove("NSYNC")
+# print(A)
+
+# print("AC/DC" in A)     # True or False
+# print("Beatles" in A)   # False
+ 
+# album_set1 = set(["Thriller", "AC/DC", "Back in Black"])
+# album_set2 = set(["AC/DC", "Back in Black", "The Dark Side of the Moon"])
+
+# print(album_set1)
+# print(album_set2)
+# print(album_set1 & album_set2)
+# # or
+# print(album_set1.intersection(album_set2))
+
+# print(album_set1.difference(album_set2))
+# print(album_set2.difference(album_set1))
+
+# try:
+#     number = int("hello")
+#     result = 10 / number
+
+# except ZeroDivisionError:
+#     print("You cannot divide by zero.")
+
+# except ValueError:
+#     print("That was not a valid whole number.")
