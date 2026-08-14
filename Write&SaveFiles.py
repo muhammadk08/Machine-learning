@@ -16,3 +16,14 @@ with open(filename, "w") as f:
 
 with open(filename, "w") as f:
     f.write("Overwrite\n")
+
+with open(filename, "a") as f:
+    f.write("Line C\n")
+    f.write("Line D\n")
+    f.write("Line E\n")
+
+with open(filename, "a+") as f:
+    f.write("Line F\n")
+    # At this point, the cursor is at the end of the file
+    data = f.read()
+    print("Read after writing with a+:", repr(data))
